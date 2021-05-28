@@ -13,7 +13,25 @@
 <body>
     This is math formula $$a^2+b^2 = x^2 + \frac{2}{3}$$
     <br>
-    next line in a equation $x+y/2$
+    next line in a equation $\int x\phi+y/2$
+    \[
+        \int c^2
+    \]
+    <div class="term" id='n'>
+        hey hello
+    </div>
+    <style>
+        .term{
+            background-color:blue;
+            padding-bottom: 20px;
+        }
+        #n {
+           text-align: center; 
+           color:white;
+           font-size: 20px;
+        }
+    </style>
+
 </body>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -22,5 +40,7 @@
         processEscapes: true
       }
     });
+    let a = document.getElementById('n');
+    a.appendChild(document.createTextNode("$$ a^{\\phi(m)} \\equiv 1\\pmod m $$"));
   </script>
 </html>
